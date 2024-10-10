@@ -1,0 +1,43 @@
+.Gallery-pack{
+    width: 49.5%;
+}
+
+.four-pic{
+
+}
+
+.four-pic div{
+    border-radius: 8px;
+
+}
+
+.HCM{
+    background-size: cover;
+    height: 220px;
+    background-image: url('https://static.chotot.com/storage/PTY_STATIC_CDN/HOMEPAGE_PRICE_INDEX/ho-chi-minh-city/hcm-1.jpg');
+}
+
+.four-pic{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột với chiều rộng bằng nhau */
+    grid-template-rows: repeat(2, 1fr); /* 2 hàng với chiều cao bằng nhau */
+    grid-gap: 10px; /* Khoảng cách giữa các item */
+}
+
+.HN{
+    background-image: url('https://static.chotot.com/storage/PTY_STATIC_CDN/HOMEPAGE_PRICE_INDEX/ha-noi/ha-noi-1.jpg');
+    background-size: cover;
+
+}
+.DN{
+    background-size: cover;
+    background-image: url('https://static.chotot.com/storage/PTY_STATIC_CDN/HOMEPAGE_PRICE_INDEX/da-nang/da-nang-1.jpg');
+}
+.CT{
+    background-size: cover;
+    background-image: url('https://static.chotot.com/storage/PTY_STATIC_CDN/HOMEPAGE_PRICE_INDEX/can-tho/can-tho-1.jpg');
+}
+.BD{
+    background-size: cover;
+    background-image: url('https://static.chotot.com/storage/PTY_STATIC_CDN/HOMEPAGE_PRICE_INDEX/binh-duong/binh-duong-1.jpg');
+}
