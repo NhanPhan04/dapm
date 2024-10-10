@@ -29,7 +29,7 @@ const SliderCustom = () => {
     }
 
     return (
-        <div className="Slider-wrapper relative">
+        <div className="Slider-wrapper relative ">
         
             <button onClick={decreaseIndex} className="button-slider left-rounded flex absolute px-2 py-2 trans-y left-0 top-1/2 text-white">
                 <KeyboardArrowLeftIcon/>
