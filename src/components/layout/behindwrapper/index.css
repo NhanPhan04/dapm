@@ -1,0 +1,11 @@
+.BehindLayout-wrapper{
+        background-image: url('https://cdn.chotot.com/raw/BMdlnJydi_KlCJBByj3Ujj6_dLRIisJR_783JeeoMus/preset:raw/plain/bf18cff3319fe4e4981796b0fb7d3b8d-2899708355156504978.jpg'); 
+        background-attachment: fixed;
+        background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ màn hình */
+        background-position-y:50px; /* Đặt hình ảnh ở giữa */
+}
+    
+
+.sideimg{
+
+}

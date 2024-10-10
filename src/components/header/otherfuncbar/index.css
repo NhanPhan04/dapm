@@ -1,0 +1,8 @@
+.icon-button{
+   width: 24px !important ;
+    color: #222222;
+}
+.icon-button:hover{
+    opacity: 0.8;
+
+}
