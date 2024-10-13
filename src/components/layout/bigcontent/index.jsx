@@ -6,6 +6,11 @@ import TwoBlockContent from "../twoblock-content";
 import GalleryBlock from "../Galleryblock";
 import TextBaseSemi from "../../text/semibold/text-base";
 import HouseItemBlock from "../../item/houseItemBlock";
+import SliderCustomVer2 from "../../slider/index1";
+import CoWorker from "../coworker-content";
+import SizeAdjustContent from "../sizeadjustcontent";
+import PopularSearchListContent from "../popularsearchlist-content";
+import PreferentialContent from "../preferential-content";
 
 
 
@@ -75,13 +80,13 @@ const BigContent = () => {
             <DropdownMenuVer2 list={SellDropList} imgSrc={`${process.env.PUBLIC_URL}/img/bruh/item1.png`} title={"Dự án"}/>
             <DropdownMenuVer2 list={SellDropList} imgSrc={`${process.env.PUBLIC_URL}/img/bruh/item2.png`} title={"Môi giới"}/>
         </div>
-        <div className="mt-2 flex">
+        <div className="mt-3 flex">
             <TwoBlockContent/>
         </div>
-        <div className="mt-2">
+        <div className="mt-3">
             <GalleryBlock title={"Bất động sản theo khu vực"}/>
         </div>
-        <div className="mt-2 px-3 py-2 bg-white ">
+        <div className="mt-3 px-3 py-2 rounded-lg bg-white ">
             <div className="my-2">
              <TextBaseSemi text={"Mua bán bất động sản"}/>
             </div>
@@ -91,7 +96,8 @@ const BigContent = () => {
                 ))}
             </div>
         </div>
-        <div className="mt-2 px-3 py-2 bg-white ">
+
+        <div className="mt-3 px-3 py-2 bg-white rounded-lg ">
             <div className="py-2">
             <TextBaseSemi text={"Cho thuê bất động sản"}/>
 
@@ -101,6 +107,26 @@ const BigContent = () => {
                     <HouseItemBlock item={item}/>
                 ))}
             </div>
+        </div>
+
+        <div className="mt-3">
+            <SliderCustomVer2 />
+        </div>
+
+        <div className="mt-3">
+            <CoWorker/>
+        </div>
+
+        <div className="mt-3">
+            <SizeAdjustContent/>
+        </div>
+
+        <div className="mt-3">
+            <PopularSearchListContent/>
+        </div>
+
+        <div className="mt-3">
+            <PreferentialContent />
         </div>
     </div>
 }

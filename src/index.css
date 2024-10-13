@@ -40,3 +40,10 @@ code {
 .text-white{
   color: white;
 }
+
+.c{
+  transform:  translateX(-50%);
+}
+.transform-translatey-minus50{
+  transform:  translateY(-50%);
+}
