@@ -41,9 +41,13 @@ code {
   color: white;
 }
 
-.c{
+.transform-translatex-minus50{
   transform:  translateX(-50%);
 }
 .transform-translatey-minus50{
-  transform:  translateY(-50%);
+  transform:  translateY(-50%) !important;
+}
+
+.w-col{
+  width: 49%;
 }

@@ -13,7 +13,7 @@ const HouseItemBlock = ({ item }) => {
 
     return (
         <div className="HouseItemBlock-wrapper px-1 py-1 flex flex-col gap-1">
-            <img src={item.imgsrc} alt={item.title || "House Image"} /> {/* Thêm alt hợp lý */}
+            <img className="" src={item.imgsrc} alt={item.title || "House Image"} /> {/* Thêm alt hợp lý */}
             <TextBaseNor text={hideLongText(item.title)} /> {/* Ẩn text dài */}
             <TextXsNor text={item.description || "No description available."} /> {/* Fix lỗi chính tả và thêm giá trị mặc định */}
             <RedXsSemi text={item.price} />

@@ -1,0 +1,11 @@
+.next-btn:hover,.previous-btn:hover{
+    padding: 7px 7px;
+    transition: 0.3s ease-in-out;
+}
+.SwiperItem-wrapper {
+    position: relative !important;
+}
+
+.next-btn,.previous-btn{
+    position: absolute !important;
+}
