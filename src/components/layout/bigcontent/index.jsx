@@ -145,18 +145,36 @@ const BigContent = () => {
             describe:"Đất ",
             function: ()=>{}
         },
+    ]
+    const RentDropList=[
         {
-            describe:"Văn phòng mặt bằng kinh doanh",
+            describe:"Căn hộ/ Chung cư",
+            function: ()=>{}
+        },
+        {
+            describe:"Nhà ở",
+            function: ()=>{}
+        },
+        {
+            describe:"Đất ",
+            function: ()=>{}
+        },
+        {
+            describe:"Văn phòng, Mặt bằng kinh doanh  ",
+            function: ()=>{}
+        },
+        {
+            describe:"Phòng trọ",
             function: ()=>{}
         }
     ]
     return <div className="BigContent-wrapper ">
         <Banner/>
-        <div className="flex bg-white justify-between rounded-e-lg rounded-bl-lg">
+
+        <div className="flex bg-white rounded-e-lg rounded-bl-lg">
             <DropdownMenuVer2 list={SellDropList} imgSrc={`${process.env.PUBLIC_URL}/img/bruh/item.png`} title={"Mua bán"}/>
-            <DropdownMenuVer2 list={SellDropList} imgSrc={`${process.env.PUBLIC_URL}/img/bruh/item.png`} title={"Cho thuê"}/>
-            <DropdownMenuVer2 list={SellDropList} imgSrc={`${process.env.PUBLIC_URL}/img/bruh/item1.png`} title={"Dự án"}/>
-            <DropdownMenuVer2 list={SellDropList} imgSrc={`${process.env.PUBLIC_URL}/img/bruh/item2.png`} title={"Môi giới"}/>
+             <div className="w-small bg-gray-200"></div>
+            <DropdownMenuVer2 list={RentDropList} imgSrc={`${process.env.PUBLIC_URL}/img/bruh/item1.png`} title={"Cho thuê"}/>
         </div>
         <div className="mt-3 flex">
             <TwoBlockContent/>

@@ -15,12 +15,12 @@ export default function DropdownMenuVer2({title,list,imgSrc,description}) {
   }
 
   return (
-    <Menu as="div" className="DropdownMenuVer2-wrapper relative inline-block text-left py-6">
+    <Menu as="div" className="DropdownMenuVer2-wrapper w-1/2 relative inline-block text-left py-1">
       <div>
         <MenuButton className="inline-flex w-full justify-center items-center gap-1 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 ">
-          <img src={imgSrc} alt={title} className='-mr-1 h-12'/>
+          <img src={imgSrc} alt={title} className='-mr-1 h-20'/>
           <div className='text-start ml-2'>
-            <h2 className='text-lg bold'>
+            <h2 className='text-orange-400 text-lg bold'>
              {title}
             </h2>
             <p className='text-xs'><em>154.270</em> người đăng <br/> tin mua bán</p>

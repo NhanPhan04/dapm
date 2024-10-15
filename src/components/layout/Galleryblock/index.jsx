@@ -23,7 +23,7 @@ const GalleryBlock = ({ title }) => {
     };
 
     return (
-        <div className="GalleryBlockContent-wrapper bg-white px-3 py-2">
+        <div className="GalleryBlockContent-wrapper bg-white px-3 py-2 rounded-lg">
             <h1 className="font-semibold text-base mt-2 mb-3">{title}</h1>
             <div className="type-section gap-2 flex ">
                 {/* Nút Mua bán */}

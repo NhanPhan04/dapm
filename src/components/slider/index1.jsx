@@ -39,7 +39,7 @@ const SliderCustomVer2 = () => {
     };
 
     return (
-        <div className="Slider-wrapper relative">
+        <div className="Slider-wrapper relative rounded-lg">
             <img
                 src={bannerList[bannerIndex]}
                 alt="banner"
@@ -47,7 +47,7 @@ const SliderCustomVer2 = () => {
             />
             <div className="absolute right-1/2">
              {bannerList.map((item,index)=>{
-                <div key={index} className="rounded px-1 py-1 bg-black">ffff</div>
+                <div key={index} className="rounded px-1 py-1 bg-black"></div>
              })}
             
             </div>

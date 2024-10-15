@@ -25,7 +25,7 @@ const CoWorker=()=>{
             img:`${process.env.PUBLIC_URL}/img/partner/partner2.png`,
         },
     ]
-    return<div className="CoWorkerContent-wrapper px-6 py-3 bg-white">
+    return<div className="CoWorkerContent-wrapper px-6 py-3 bg-white rounded-lg">
         <div className="flex gap-1">
             <TextBaseSemi text={"Đồng hành cùng"}/>
             <OrangeMarkBase text={"Nhà tốt"}/>

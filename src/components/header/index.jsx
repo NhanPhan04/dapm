@@ -4,7 +4,7 @@ import SubHeaderContent from "./subheader";
 import MainHeaderContent from "./mainheader";
 
 const Header = () => {
-    return<div className="headerwrapper ">
+    return<div className="headerwrapper shadow-sm pb-2 bg-white">
         <SubHeaderContent/>
         <MainHeaderContent/>
     </div>

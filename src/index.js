@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom';
 import HomeScreen from './screen/homescreen';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HomeScreen/>
+    <BrowserRouter>
+      <HomeScreen/> {/* Render the App component here */}
+    </BrowserRouter>
   </React.StrictMode>
 );
 
