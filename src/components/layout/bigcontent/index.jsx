@@ -5,7 +5,6 @@ import DropdownMenuVer2 from "../../dropdownmenu/dropver2";
 import TwoBlockContent from "../twoblock-content";
 import GalleryBlock from "../Galleryblock";
 import TextBaseSemi from "../../text/semibold/text-base";
-import HouseItemBlock from "../../item/houseItemBlock";
 import SliderCustomVer2 from "../../slider/index1";
 import CoWorker from "../coworker-content";
 import SizeAdjustContent from "../sizeadjustcontent";
@@ -13,7 +12,6 @@ import SpecialContent from "../../speacial";
 import SwiperItem from "../../SwiperItem";
 import HouseItemBlockVer2 from "../../item/houseItemBlock/index copy";
 import PopularSearchListContent from "../popularsearchlist-content";
-
 
 
 const BigContent = () => {

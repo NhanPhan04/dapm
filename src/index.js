@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom';
 import HomeScreen from './screen/homescreen';
+import UpLoadScreen from './screen/uploadscreen';
+import Test from './page/test';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
