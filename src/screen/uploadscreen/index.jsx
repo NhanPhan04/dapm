@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Header from "../../components/header";
-import TextSmSemi from "../../components/text/semibold/text-sm";
 import TextBaseSemi from "../../components/text/semibold/text-base";
 import TextSmNor from "../../components/text/normal/text-sm";
 import TextBaseNor from "../../components/text/normal/text-base";
@@ -35,7 +33,6 @@ const UpLoadScreen = () => {
   return (
     <div className="UpLoadScreen-wrapper relative ">
 
-      <Header />
       <div className="bg-slate-100 flex justify-center h-full py-12">
         <div className="w-8/12 bg-white py-7 px-3 rounded-lg flex">
           <div className="w-4/12 px-2">

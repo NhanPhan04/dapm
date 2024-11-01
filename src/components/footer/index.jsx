@@ -7,7 +7,7 @@ import TextSmSemi from "../text/semibold/text-sm";
 import TextBaseNor from "../text/normal/text-base";
 
 const Footer = () => {
-    return<div className="footerwrapper   py-2 ">
+    return<div className="footerwrapper  py-2 ">
         <div className="flex justify-center">
          <div className="footerwrapper-content flex px-6 justify-between">
             <div className="w-5/12">
@@ -54,7 +54,7 @@ const Footer = () => {
          </div>
          
         </div>
-        <div>ffff</div>
+      
         
     
     </div>

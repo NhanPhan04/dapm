@@ -1,0 +1,37 @@
+.subFilter{
+    color: #fa6819;
+    border:1px solid #fa6819;
+
+}
+.render-list img{
+    margin-right: 10px;
+    width: 180px;
+    height: 160px;
+    object-fit: cover;
+}
+
+
+
+.favourite-btn:hover {
+    
+}
+
+.post-items:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.location-item-filter:hover{
+    background-color: #fa6819;
+    transition: ease-in-out 0.3s;
+    color: white;
+    
+}
+
+.reset-btn{
+    color:gray;
+}
+
+.reset-btn:hover{
+    color: #fa6819;
+}

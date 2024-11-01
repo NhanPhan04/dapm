@@ -5,7 +5,7 @@ import TextBaseSemi from "../../text/semibold/text-base"
 const ShowItemListContentMoi = ({title}) =>{
     <div className="flex">
         <TextBaseSemi text={title}/>
-       ffff
+     
     </div>
 }
 export default ShowItemListContentMoi

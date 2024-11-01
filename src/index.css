@@ -17,6 +17,11 @@ code {
     monospace;
 }
 
+.onClickMark{
+  border-bottom: 1px solid #fa6819;
+  color: #fa6819;
+}
+
 .text-14px{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -37,8 +42,16 @@ code {
   background-color: #fa6819;
 }
 
+.shadow-gg{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .text-white{
   color: white;
+}
+
+.text-orange{
+  color: #fa6819;
 }
 
 .transform-translatex-minus50{
@@ -50,4 +63,8 @@ code {
 
 .w-col{
   width: 49%;
+}
+
+.wrapper{
+  width: 76%;
 }

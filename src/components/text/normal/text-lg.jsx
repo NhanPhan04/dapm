@@ -1,6 +1,6 @@
 
 
 const TextLgNor=({text})=>{
-    return<div className="text-lg font-semibold">{text}</div>
+    return<div className="text-lg ">{text}</div>
 }
 export default TextLgNor

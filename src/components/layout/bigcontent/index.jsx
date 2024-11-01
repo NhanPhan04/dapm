@@ -127,8 +127,6 @@ const BigContent = () => {
             price: "12 triệu/tháng",
         },
     ]
-    
-    const meomeo= HouseSaleList[0]
 
     const SellDropList=[
         {

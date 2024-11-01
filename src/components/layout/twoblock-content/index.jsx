@@ -17,7 +17,6 @@ const TwoBlockContent= () => {
         imgSrc: `${process.env.PUBLIC_URL}/img/tools/toolistimg2.png`
        },
     ]
-
     const serviceList= [
         {
           title:"Gói Pro",
@@ -32,8 +31,6 @@ const TwoBlockContent= () => {
          imgSrc: `${process.env.PUBLIC_URL}/img/tools/toolistimg5.png`
         },
      ]
-
-
     return<div className="TwoBlockContent-wrapper w-full flex justify-between">
         <BlockItem item={toolList} title={"Công cụ tiện ích"}/>
         <BlockItem item={serviceList} title={"Dịch vụ dành cho môi giới"}/>

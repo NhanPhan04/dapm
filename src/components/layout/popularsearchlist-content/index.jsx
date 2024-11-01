@@ -95,8 +95,8 @@ const PopularSearchListContent= ()=>{
                     </div>
 
                 </div>
-                <div className="flex items-center text-blue-500 justify-center mt-3 cursor-pointer">
-                 <TextSmSemi className="" text={"Thu gọn"}/>
+                <div className="flex items-center text-blue-500 justify-center mt-3 cursor-pointer" onClick={()=>{ChangeStateSmall()}}>
+                 <TextSmSemi className="" text={"Thu gọn"} />
                  <KeyboardArrowUpIcon/>
                 </div>
             </div>
@@ -138,7 +138,7 @@ const PopularSearchListContent= ()=>{
                   
 
                 </div>
-                <div className="flex items-center text-blue-500 justify-center mt-3 cursor-pointer">
+                <div className="flex items-center text-blue-500 justify-center mt-3 cursor-pointer" onClick={()=>{ChangeStateBig()}}>
                  <TextSmSemi className="" text={"Xem thêm"}/>
                  <KeyboardArrowDownIcon/>
                 </div>

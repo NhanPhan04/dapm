@@ -1,16 +1,20 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+
 
 export default function DropdownMenuVer1() {
+
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 ">
-           Mua bán
+           Danh mục
           <ExpandMoreIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400" />
         </MenuButton>
       </div>
+      
 
       <MenuItems
         transition
@@ -18,28 +22,18 @@ export default function DropdownMenuVer1() {
       >
         <div className="py-1">
           <MenuItem>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-            >
+           <div className='block px-4 py-2 text-sm cursor-pointer text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
+            <Link to="/sellListScreen">
               Mua bán
-            </a>
+            </Link>
+           </div>
           </MenuItem>
           <MenuItem>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-            >
+           <div className='block px-4 py-2 text-sm cursor-pointer text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
+            <Link to="/rentListScreen">
               Cho thuê
-            </a>
-          </MenuItem>
-          <MenuItem>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-            >
-              Dự án
-            </a>
+            </Link>
+           </div>
           </MenuItem>
         </div>
       </MenuItems>
