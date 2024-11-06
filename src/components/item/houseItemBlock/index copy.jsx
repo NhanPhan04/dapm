@@ -19,16 +19,16 @@ const HouseItemBlockVer2 = ({ item }) => {
 
 
     return (
-        <div className="HouseItemBlockVer2-wrapper px-2 py-2 flex flex-col gap-1 ">
-            <img src={item.imgsrc} alt={item.title || "House Image"} className="w-full h-auto"/> {/* Thêm alt hợp lý */}
+        <div className="HouseItemBlockVer2-wrapper px-2 py-2 flex flex-col gap-1 w-60">
+            <img src={item.imgsrc} alt={item.title || "House Image"} className="w-full h-56"/> {/* Thêm alt hợp lý */}
             <TextSmNor text={hideLongText1(item.title)} /> {/* Ẩn text dài */}
             <div className="text-gray-500">
              <TextXsNor text={hideLongText(item.description) || "No description available."} /> {/* Fix lỗi chính tả và thêm giá trị mặc định */}
             </div>
             <RedXsSemi text={item.price} />
+            <TextXsSemi text={item.location} />
             <div className="flex items-center justify-between">
                 <SmallButton className="moimoi" text={"Xem ngay"} />
-                <TextXsSemi text={item.location} />
             </div>
         </div>
     );

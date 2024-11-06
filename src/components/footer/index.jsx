@@ -7,7 +7,7 @@ import TextSmSemi from "../text/semibold/text-sm";
 import TextBaseNor from "../text/normal/text-base";
 
 const Footer = () => {
-    return<div className="footerwrapper  py-2 ">
+    return<div className="footerwrapper py-5 ">
         <div className="flex justify-center">
          <div className="footerwrapper-content flex px-6 justify-between">
             <div className="w-5/12">
@@ -48,7 +48,7 @@ const Footer = () => {
               <TextSmSemi text={"CHỨNG NHẬN"}/>
 
              </div>
-             <img src="https://static.chotot.com/storage/default/certificate.webp" className="w-28"/>
+             <img src="https://static.chotot.com/storage/default/certificate.webp" className="w-28" alt=""/>
              
             </div>
          </div>

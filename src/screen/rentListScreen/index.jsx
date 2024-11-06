@@ -10,10 +10,9 @@ import './index.css'
 import StarsIcon from '@mui/icons-material/Stars';
 import PostItem from "../../components/post-item";
 import HistoryIcon from '@mui/icons-material/History';
-import sellRealEstate from "../../data/data";
-
 import PaginationCustom from "../../components/PaginationCustom";
 import RentRealEstate from "../../data/rentdata";
+import { RealEstate } from "../../data/realestate";
 
 const RentListScreen = () => {
     const [city, setCity] = useState("default");
@@ -23,6 +22,7 @@ const RentListScreen = () => {
     const [open, SetOpen] = useState(false);
     const [price, SetPrice] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
+
     const itemsPerPage=6
 
     var RenderList=RentRealEstate
@@ -32,7 +32,7 @@ const RentListScreen = () => {
 
     const firstItemIndex=lastItemIndex-itemsPerPage;
 
-    const CityList = ["Tp Hồ Chí Minh", "Đà Nẵng", "Cần Thơ", "Hà Nội","Bình Dương "];
+    const CityList = ["Tp Hồ Chí Minh", "Đà Nẵng", "Cần Thơ", "Hà Nội","Bình Dương"];
 
     const TypeList=[
             {
@@ -58,7 +58,11 @@ const RentListScreen = () => {
             
         ]
 
-    var RenderList=RentRealEstate
+    
+    var RenderList=RealEstate.filter((item)=>item.RentorSell==='rent')    
+ 
+    var RenderList1=RealEstate.filter((item)=>item.rentorSell==='rent')
+        
     
     //Lọc danh sách theo giá tiền
     const FilterdByPrice=(price,list)=>{
@@ -87,48 +91,53 @@ const RentListScreen = () => {
             }
         }
 
-        //Lọc danh sách theo tài khoản Cá nhân hay môi giới hay tất cả
-        const FilteredBySellerTypeList = (person,list) => {
-            let newList=list
-            if (person === "Tất cả") {
-                return list=newList
-            }
-            return list=newList.filter((item) => item.sellerType === person);
-        };
+    //Lọc danh sách theo tài khoản Cá nhân hay môi giới hay tất cả
+    const FilteredBySellerTypeList = (person) => {
+        let newList=RenderList
+        if (person === "Tất cả") {
+                return RenderList=newList
+        }
+        return RenderList=newList.filter((item) => item.renterType   === person);
+    };
 
         
-        // Lọc danh sách theo thành phố
-        const FilteredByCity=(city)=>{
+    // Lọc danh sách theo thành phố
+    const FilteredByCity=(city)=>{
             let newList=RenderList
             if(city==="default"){
                 return RenderList=newList
             }
             return RenderList=newList.filter((item)=>item.city === city)
-        }
+    }
 
-        //Lọc danh sách theo loại nhà
-        const FilteredByCategory=(category)=>{
-            let newList=RenderList
-            return RenderList=newList.filter((item)=>item.category === category)
+    //Lọc danh sách theo loại nhà
+    const FilteredByCategory=(category)=>{
+        let newList=RenderList
+        if(category==="default"){
+            return RenderList
         }
+            return RenderList=newList.filter((item)=>item.category === category)
+    }
 
         //pagination
-        RenderList=RenderList.slice(firstItemIndex,lastItemIndex)
-        const totalPages = Math.ceil(sellRealEstate.length / itemsPerPage); // Total number of pages
+    RenderList=RenderList.slice(firstItemIndex,lastItemIndex)
+    const totalPages = Math.ceil(RenderList1.length / itemsPerPage); // Total number of pages
 
 
-        FilteredBySellerTypeList(sellerType,RenderList)
-        FilterdByPrice(price,RenderList)
-        FilteredByCity(city,RenderList)
+    FilteredBySellerTypeList(sellerType,RenderList)
+    FilterdByPrice(price,RenderList)
+    FilteredByCity(city,RenderList)
+    FilteredByCategory(category)
+        
         
 
-        const HandlerRenderList = (list) => {
+    const HandlerRenderList = (list) => {
             return list.map((item, index) => (
                 <div className="" key={index}>
                     <PostItem item={item} />
                 </div>
             ));
-        };
+    };
 
     return(
         <div className="SellListScreen flex flex-col items-center  bg-slate-100 mb-4">
@@ -145,8 +154,10 @@ const RentListScreen = () => {
               </em>
               <div className="flex gap-2 items-center">
                {category==="default"?<></>:<div className="rounded-md px-2 py-1 text-white bg-orange-600"><TextBaseSemi text={category}/></div>}
-               {sellerType==="Tất cả"?
-               <div className="rounded-md px-2 py-1 text-white bg-orange-600"><TextBaseSemi text={sellerType}/></div>:
+               {sellerType==="Tất cả"
+               ?
+               <div className="rounded-md px-2 py-1 text-white bg-orange-600"><TextBaseSemi text={sellerType}/></div>
+               :
                <div className="rounded-md px-2 py-1 text-white bg-orange-600"><TextBaseSemi text={sellerType}/></div>}
                {city==="default"?<></>:<div className="rounded-md px-2 py-1 text-white bg-orange-600"><TextBaseSemi text={city}/></div>}
                {price===""?<div></div>:<div className="rounded-md px-2 py-1 text-white bg-orange-600"><TextBaseSemi text={price}/></div>}

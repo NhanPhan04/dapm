@@ -16,6 +16,7 @@ const RentRealEstate = [
         furnished: true,
         renterType: "Cá nhân",
         updatedAt: new Date('2024-10-28T10:00:00Z'),
+        rentOrsell: "rent"
     },
     {
         title: "Nhà Nguyên Căn 3 Tầng tại P.4, QUẬN TÂN BÌNH, Gần Sân Bay Tân Sơn Nhất",
@@ -34,6 +35,7 @@ const RentRealEstate = [
         furnished: false,
         renterType: "Cá nhân",
         updatedAt: new Date('2024-10-28T11:00:00Z'),
+        rentOrsell: "rent"
     },
     {
         title: "Phòng Trọ Giá Rẻ tại P. An Phú, QUẬN 2",
@@ -52,6 +54,7 @@ const RentRealEstate = [
         furnished: true,
         renterType: "Cá nhân",
         updatedAt: new Date('2024-10-28T12:00:00Z'),
+        rentOrsell: "rent"
     },
     {
         title: "Lô Đất Cho Thuê tại Bình Chánh, Thích Hợp Làm Nhà Vườn",
@@ -70,6 +73,7 @@ const RentRealEstate = [
         furnished: false,
         renterType: "Cá nhân",
         updatedAt: new Date('2024-10-28T14:00:00Z'),
+        rentOrsell: "rent"
     },
     {
         title: "Mặt Bằng Kinh Doanh tại P. Bến Thành, QUẬN 1, Gần Chợ Bến Thành",
@@ -88,7 +92,8 @@ const RentRealEstate = [
         furnished: false,
         renterType: "Đối tác",
         updatedAt: new Date('2024-10-28T15:00:00Z'),
-    },
+        rentOrsell: "rent"
+    }
 ];
 
 export default RentRealEstate;

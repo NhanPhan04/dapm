@@ -68,3 +68,7 @@ code {
 .wrapper{
   width: 76%;
 }
+
+.hoverver1:hover{
+  background-color: lightgrey;
+}

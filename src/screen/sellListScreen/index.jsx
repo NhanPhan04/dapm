@@ -6,13 +6,13 @@ import PaidIcon from '@mui/icons-material/Paid';
 import TextSmNor from "../../components/text/normal/text-sm"
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 import TextBaseNor from "../../components/text/normal/text-base"
-import './index.css'
 import StarsIcon from '@mui/icons-material/Stars';
 import PostItem from "../../components/post-item";
 import HistoryIcon from '@mui/icons-material/History';
-import sellRealEstate from "../../data/data";
-import TrundelText from "../../function/trundelTextCase";
+
 import PaginationCustom from "../../components/PaginationCustom";
+import { RealEstate } from "../../data/realestate";
+import './index.css'
 
 
 const SellHouseListScreen = () =>{
@@ -23,10 +23,9 @@ const SellHouseListScreen = () =>{
     const [open, SetOpen] = useState(false);
     const [price, SetPrice] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
+
     const itemsPerPage=6
     
-    
-
     const lastItemIndex= currentPage*itemsPerPage;
 
     const firstItemIndex=lastItemIndex-itemsPerPage;
@@ -35,7 +34,7 @@ const SellHouseListScreen = () =>{
 
     const TypeList=[
             {
-                type:"Căn hộ / Chung cư",
+                type:"Căn hộ",
                 src:`${process.env.PUBLIC_URL}/img/houseType/hotel.png`
             },
             {
@@ -46,9 +45,10 @@ const SellHouseListScreen = () =>{
                 type:"Đất",
                 src:`${process.env.PUBLIC_URL}/img/houseType/ground.png`
             }
-        ]
+    ]
 
-    var RenderList=sellRealEstate
+    var RenderList=RealEstate.filter((item)=>item.RentorSell==='Sell')
+    var RenderList1=RealEstate.filter((item)=>item.RentorSell==='Sell')
     
     //Lọc danh sách theo giá tiền
     const FilterdByPrice=(price,list)=>{
@@ -77,58 +77,60 @@ const SellHouseListScreen = () =>{
             }
         }
 
-        //Lọc danh sách theo tài khoản Cá nhân hay môi giới hay tất cả
-        const FilteredBySellerTypeList = (person,list) => {
-            let newList=list
-            if (person === "Tất cả") {
-                return list=newList
-            }
-            return list=newList.filter((item) => item.sellerType === person);
-        };
+    //Lọc danh sách theo tài khoản Cá nhân hay môi giới hay tất cả
+    const FilteredBySellerTypeList = (person,list) => {
+        let newList=RenderList
+        if (person === "Tất cả") {
+                return RenderList=newList
+        }
+        return RenderList=newList.filter((item) => item.sellerType === person);
+    };
 
         
-        // Lọc danh sách theo thành phố
-        const FilteredByCity=(city)=>{
+    // Lọc danh sách theo thành phố
+    const FilteredByCity=(city)=>{
             let newList=RenderList
             if(city==="default"){
                 return RenderList=newList
             }
             return RenderList=newList.filter((item)=>item.city === city)
-        }
+    }
 
-        //Lọc danh sách theo loại nhà
-        const FilteredByCategory=(category)=>{
-            let newList=RenderList
+    //Lọc danh sách theo loại nhà
+    const FilteredByCategory=(category)=>{
+        let newList=RenderList
+        if(category==="default"){
+            return RenderList
+        }
             return RenderList=newList.filter((item)=>item.category === category)
-        }
+    }
 
-        //pagination
-        RenderList=RenderList.slice(firstItemIndex,lastItemIndex)
-        const totalPages = Math.ceil(sellRealEstate.length / itemsPerPage); // Total number of pages
+    //pagination
+    RenderList=RenderList.slice(firstItemIndex,lastItemIndex)
+    const totalPages = Math.ceil(RenderList1.length / itemsPerPage); // Total number of pages
 
-
-        FilteredBySellerTypeList(sellerType,RenderList)
-        FilterdByPrice(price,RenderList)
-        FilteredByCity(city,RenderList)
+    FilteredBySellerTypeList(sellerType,RenderList)
+    FilterdByPrice(price,RenderList)
+    FilteredByCity(city,RenderList)
+    FilteredByCategory(category)
         
 
-        const HandlerRenderList = (list) => {
-            return list.map((item, index) => (
+    const HandlerRenderList = (list) => {
+        return list.map((item, index) => (
                 <div className="" key={index}>
                     <PostItem item={item} />
                 </div>
-            ));
-        };
+        ));
+    };
 
-    
-        return(
+    return(
         <div className="SellListScreen flex flex-col items-center  bg-slate-100 mb-4">
             <div className="wrapper mt-4 ">
              <div className="flex gap-3">
                    <p className="text-xs">Nhà tốt </p>
                    <p className="text-xs">Mua bán bất động sản</p>
-                   
              </div>
+             
              <div className="mt-3 mb-3 flex items-center justify-between">
                 <TextLgSemi text={"Mua bán bất động sản giá tốt"}/>
                 <div className="flex gap-2 items-center">
@@ -172,10 +174,10 @@ const SellHouseListScreen = () =>{
                             </div>
                         ))}
                     </div>
-                </div>
             </div>
+        </div>
             
-            <div className="wrapper flex mb-6 gap-4">
+        <div className="wrapper flex mb-6 gap-4">
                 <div className="w-3/4 rounded-md">
                 <div className="bg-white rounded p-2 mt-3">
                     <div className="flex justify-between">
@@ -322,4 +324,4 @@ const SellHouseListScreen = () =>{
         </div>
         )
     }
-    export default SellHouseListScreen
+export default SellHouseListScreen

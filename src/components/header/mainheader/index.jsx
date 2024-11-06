@@ -25,7 +25,7 @@ const MainHeaderContent = () => {
 
         <div className="createNews-Section ">
             <Link to="/uploadscreen">
-             <CusButton title={"Đăng ngay"} func={()=>{}} />
+              <CusButton title={"Đăng ngay"} func={()=>{}} />
             </Link>
         </div>
     </div>

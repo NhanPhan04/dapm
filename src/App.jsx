@@ -7,6 +7,8 @@ import SellListScreen from './screen/sellListScreen';
 import RentListScreen from './screen/rentListScreen';
 import ProfileScreen from './screen/profilescreen';
 import ProductDetail from './screen/productdetailscreen';
+import LoginScreen from './screen/loginScreen';
+import RegisterScreen from './screen/registerscreen';
 
 
 const App = () => {
@@ -19,7 +21,9 @@ const App = () => {
                 <Route path='/sellListScreen' element={<SellListScreen/>} />
                 <Route path='/rentListScreen' element={<RentListScreen/>}/>
                 <Route path='/profileScreen' element={<ProfileScreen/>}/>
-                <Route path='/productDetail' element={<ProductDetail/>}/>
+                <Route path="/product/:id" element={<ProductDetail />} />
+                <Route path='/login' element={<LoginScreen/>}/>
+                <Route path='/register' element={<RegisterScreen/>}/>
             </Routes>
             <Footer/>
         </div>

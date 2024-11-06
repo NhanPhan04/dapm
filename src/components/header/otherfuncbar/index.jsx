@@ -27,7 +27,7 @@ const OtherFuncBar = () => {
                 <item.icon className="icon-button"/>
             </div>
         ))}
-        <Link to="/profileScreen">
+        <Link to="/login">
         <div className="flex items-center">
             <div className="bg-orange rounded-2xl p-0.5 ">
                 <Person2Icon className="icon-button"/>
