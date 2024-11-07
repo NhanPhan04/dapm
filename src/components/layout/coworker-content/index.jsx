@@ -5,7 +5,6 @@ import TextLgSemi from "../../text/semibold/text-lg";
 import GppGoodIcon from '@mui/icons-material/GppGood';
 import TextXsSemi from "../../text/semibold/text-xs";
 import UpButton from "../../button/upbutton";
-import BigButton from "../../button/bigbutton";
 
 const CoWorker=()=>{
     const list=[
@@ -43,9 +42,17 @@ const CoWorker=()=>{
                 </div>
             ))}
         </div>
-        <div className="text-center">
-            <BigButton title={"Tìm hiểu ngay chương trình"}/>
-        </div>
+        <div className="text-center"> 
+    <a 
+        href="https://www.chotot.com/chuong-trinh/doi-tac-doanh-nghiep-nha-tot" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="btn btn-white btn-animate text-base font-semibold"
+    >
+        Tìm hiểu ngay chương trình
+    </a>
+</div>
+
     </div>
 }
 export default CoWorker

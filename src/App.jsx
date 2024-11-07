@@ -9,6 +9,7 @@ import ProfileScreen from './screen/profilescreen';
 import ProductDetail from './screen/productdetailscreen';
 import LoginScreen from './screen/loginScreen';
 import RegisterScreen from './screen/registerscreen';
+import ChatBox from './components/ChatBox/ChatBox';
 import FavoritesPage from './components/FavoritesPage/FavoritesPage';
 
 const App = () => {
@@ -24,8 +25,8 @@ const App = () => {
                 <Route path="/product/:id" element={<ProductDetail />} />
                 <Route path='/login' element={<LoginScreen/>}/>
                 <Route path='/register' element={<RegisterScreen/>}/>
-
                 <Route path="/favorites" element={<FavoritesPage />} />
+                <Route path="/chat" element={<ChatBox />} />
             </Routes>
             <Footer/>
         </div>

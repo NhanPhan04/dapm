@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Favorites.css';
+import ChatBox from '../ChatBox/ChatBox';
 
 const FavoritesPage = () => {
-    // Dữ liệu mẫu cho mục yêu thích (có thể thay thế bằng dữ liệu thực từ backend)
+    const [isChatOpen, setIsChatOpen] = useState(false);
+
     const favoriteItems = [
         {
             id: 1,
@@ -87,6 +89,13 @@ const FavoritesPage = () => {
         // Thêm nhiều mục hơn ở đây nếu cần
     ];
 
+    const handleChatOpen = () => {
+        setIsChatOpen(true);
+    };
+
+    const handleChatClose = () => {
+        setIsChatOpen(false);
+    };
     return (
         <div className="favorites-page">
             <h1>Tin Đăng Đã Lưu (7/100)</h1>
@@ -100,12 +109,14 @@ const FavoritesPage = () => {
                             <p className="favorite-location">{item.date} • {item.location}</p>
                         </div>
                         <div className="favorite-actions">
-                            <button className="chat-button">Chat</button>
+                            <button className="chat-button" onClick={handleChatOpen}>Chat</button>
                             <button className="like-button">❤️</button>
                         </div>
                     </div>
                 ))}
             </div>
+
+            {isChatOpen && <ChatBox onClose={handleChatClose} />}
         </div>
     );
 };
