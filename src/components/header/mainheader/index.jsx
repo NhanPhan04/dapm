@@ -26,7 +26,9 @@ const MainHeaderContent = () => {
             </div>
 
             {/* New Section for 'Người tìm nhà' and 'Người chủ nhà' */}
-            <div className="user-options-section flex gap-5">
+            <div className="user-options-section flex gap-5"  style={{
+      marginTop: '10px'
+    }}>
                 <Link to="/register" className="flex items-center gap-2 bg-orange-500 p-2 rounded-lg">
                     <PersonIcon className="text-white" />
                     <div>
