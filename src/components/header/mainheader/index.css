@@ -2,9 +2,24 @@
     height: 35px;
 }
 
-.logo-section ,.createNews-Section{
+.logo-section ,
+.createNews-Section{
     width: 13%;
 }
 .headerFunction-section{
     width: 74%;
+}
+.user-options-section a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.user-options-section .bg-orange-500 {
+    background-color: #f97316; /* or your specific orange shade */
+}
+
+.user-options-section .rounded-lg {
+    border-radius: 8px;
 }

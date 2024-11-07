@@ -1,1 +1,1 @@
-export const FilterdByPrice()
+//export const FilterdByPrice()
