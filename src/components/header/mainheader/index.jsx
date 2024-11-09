@@ -37,7 +37,7 @@ const MainHeaderContent = () => {
                     </div>
                 </Link>
                 
-                <Link to="/owner" className="flex items-center gap-2 bg-orange-500 p-2 rounded-lg">
+                <Link to="/registerbroker" className="flex items-center gap-2 bg-orange-500 p-2 rounded-lg">
                     <HomeIcon className="text-white" />
                     <div>DÀNH CHO NGƯỜI CHỦ NHÀ</div>
                 </Link>

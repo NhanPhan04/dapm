@@ -1,0 +1,18 @@
+.profile-page {
+    padding-top: 2rem;
+  }
+  
+  .greeting-section {
+    text-align: left;
+  }
+  
+  .category-section .MuiButton-root {
+    display: flex;
+    flex-direction: column;
+    color: #F97316;
+  }
+  
+  .transaction-history-section {
+    background-color: #fecdd3;
+  }
+  

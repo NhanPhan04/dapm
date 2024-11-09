@@ -11,6 +11,9 @@ import LoginScreen from './screen/loginScreen';
 import RegisterScreen from './screen/registerscreen';
 import ChatBox from './components/ChatBox/ChatBox';
 import FavoritesPage from './components/FavoritesPage/FavoritesPage';
+import ProfileBroker from './components/profilebroker/profilebroker';
+import LoginBroker from './components/loginbroker/loginbroker';
+import RegisterBroker  from './components/registerbroker/registerbroker';
 
 const App = () => {
     return(
@@ -27,6 +30,11 @@ const App = () => {
                 <Route path='/register' element={<RegisterScreen/>}/>
                 <Route path="/favorites" element={<FavoritesPage />} />
                 <Route path="/chat" element={<ChatBox />} />
+           
+                <Route path='/profilebroker' element={<ProfileBroker/>}/>
+                <Route path='/loginbroker' element={<LoginBroker/>}/>
+                <Route path='/registerbroker' element={<RegisterBroker/>}/>
+    
             </Routes>
             <Footer/>
         </div>
