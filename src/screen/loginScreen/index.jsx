@@ -13,7 +13,7 @@ const LoginScreen = () =>{
                  <h1 className='text-xl font-bold'>Đăng nhập</h1>
                  <input type='email' required className='px-3 border py-3 rounded-md w-full' placeholder='Email' />
                  <input type='password' required className='px-3 border py-3 rounded-md w-full' placeholder='Mật khẩu' />
-                 <a href='' className='text-blue-600'>Quên mật khẩu</a>
+                 <a href='/ChangePassword' className='text-blue-600'>Quên mật khẩu</a>
 
                  <Link to={"/profileScreen"}>
                  <button type='submit' className='py-4 w-full bg-orange-600 text-center text-white text-xl font-medium uppercase rounded-md'>Đăng nhập</button>
@@ -22,7 +22,8 @@ const LoginScreen = () =>{
                 </form>
 
                 <h3 className='text-center mt-4'>
-                    Chưa có tài khoản ?<Link to={"/register"}> <a href='/registerScreen' className='font-semibold text-blue-600'>Đăng kí ngay</a></Link>
+                    Chưa có tài khoản ?<Link to={"/register"}> 
+                    <a href='/registerScreen' className='font-semibold text-blue-600'>Đăng kí ngay</a></Link>
                 </h3>
                 
             </div>

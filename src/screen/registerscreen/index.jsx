@@ -13,7 +13,6 @@ const RegisterScreen=()=>{
              <input type='text' required className='px-3 border py-3 rounded-md w-full' placeholder='Họ tên' />
              <input type='email' required className='px-3 border py-3 rounded-md w-full' placeholder='Email' />
              <input type='password' required className='px-3 border py-3 rounded-md w-full' placeholder='Mật khẩu' />
-             <a href='' className='text-blue-600'>Quên mật khẩu</a>
 
              <button type='submit' className='py-4 w-full bg-orange-600 text-center text-white text-xl font-medium uppercase rounded-md'>Đăng kí</button>
             </form>

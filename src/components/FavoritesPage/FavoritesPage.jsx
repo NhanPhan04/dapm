@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Favorites.css';
 import ChatBox from '../ChatBox/ChatBox';
+import Header from '../../components/header';
+import Footer from '../../components/footer';
 
 const FavoritesPage = () => {
     const [isChatOpen, setIsChatOpen] = useState(false);
@@ -14,79 +16,70 @@ const FavoritesPage = () => {
             date: 'Hôm qua',
             location: 'Quận 4',
             imageUrl: '/img/notpulic.png'
-            // Đường dẫn tới ảnh của căn hộ
         },
         {
-            id: 1,
+            id: 2,
             title: 'Cho thuê căn hộ View',
             price: '16 triệu/tháng',
             area: '80 m²',
             date: 'Hôm qua',
             location: 'Quận 4',
             imageUrl: '/img/notpulic.png'
-            // Đường dẫn tới ảnh của căn hộ
         },
         {
-            id: 1,
+            id: 3,
             title: 'Cho thuê căn hộ View',
             price: '16 triệu/tháng',
             area: '80 m²',
             date: 'Hôm qua',
             location: 'Quận 4',
             imageUrl: '/img/notpulic.png'
-            // Đường dẫn tới ảnh của căn hộ
         },
         {
-            id: 1,
+            id: 4,
             title: 'Cho thuê căn hộ View',
             price: '16 triệu/tháng',
             area: '80 m²',
             date: 'Hôm qua',
             location: 'Quận 4',
             imageUrl: '/img/notpulic.png'
-            // Đường dẫn tới ảnh của căn hộ
         },
         {
-            id: 1,
+            id: 5,
             title: 'Cho thuê căn hộ View',
             price: '16 triệu/tháng',
             area: '80 m²',
             date: 'Hôm qua',
             location: 'Quận 4',
             imageUrl: '/img/notpulic.png'
-            // Đường dẫn tới ảnh của căn hộ
         },
         {
-            id: 1,
+            id: 6,
             title: 'Cho thuê căn hộ View',
             price: '16 triệu/tháng',
             area: '80 m²',
             date: 'Hôm qua',
             location: 'Quận 4',
             imageUrl: '/img/notpulic.png'
-            // Đường dẫn tới ảnh của căn hộ
         },
         {
-            id: 1,
+            id: 7,
             title: 'Cho thuê căn hộ View',
             price: '16 triệu/tháng',
             area: '80 m²',
             date: 'Hôm qua',
             location: 'Quận 4',
             imageUrl: '/img/notpulic.png'
-            // Đường dẫn tới ảnh của căn hộ
         },
-          {
-            id: 1,
+        {
+            id: 8,
             title: 'Cho thuê căn hộ View',
             price: '16 triệu/tháng',
             area: '80 m²',
             date: 'Hôm qua',
             location: 'Quận 4',
             imageUrl: '/img/notpulic.png'
-            // Đường dẫn tới ảnh của căn hộ
         },
-        // Thêm nhiều mục hơn ở đây nếu cần
     ];
 
     const handleChatOpen = () => {
@@ -96,8 +89,10 @@ const FavoritesPage = () => {
     const handleChatClose = () => {
         setIsChatOpen(false);
     };
+
     return (
         <div className="favorites-page">
+            <Header />
             <h1>Tin Đăng Đã Lưu (7/100)</h1>
             <div className="favorites-list">
                 {favoriteItems.map(item => (
@@ -117,6 +112,7 @@ const FavoritesPage = () => {
             </div>
 
             {isChatOpen && <ChatBox onClose={handleChatClose} />}
+            <Footer />
         </div>
     );
 };

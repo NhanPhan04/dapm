@@ -2,7 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import { RealEstate } from "../../data/realestate";
-
+import Header from '../../components/header';
+import Footer from '../../components/footer';
 const ProductDetail = () => {
   const { id } = useParams();
   const product = RealEstate.find((item) => item.id === parseInt(id));
@@ -14,6 +15,10 @@ const ProductDetail = () => {
   console.log(product.legalDocuments)
 
   return (
+  <div>
+
+        <Header />
+
     <div className="bg-gray-100 flex justify-center">
         <div className="wrapper mb-12 mt-9">
 
@@ -104,7 +109,13 @@ const ProductDetail = () => {
         </div>
       </div>
     </div>
+  
         </div>
+      <Footer />
+
+  </div>
+
+        
   );
 };
 

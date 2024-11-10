@@ -13,6 +13,8 @@ import HistoryIcon from '@mui/icons-material/History';
 import PaginationCustom from "../../components/PaginationCustom";
 import RentRealEstate from "../../data/rentdata";
 import { RealEstate } from "../../data/realestate";
+import Header from '../../components/header';
+import Footer from '../../components/footer';
 
 const RentListScreen = () => {
     const [city, setCity] = useState("default");
@@ -141,6 +143,7 @@ const RentListScreen = () => {
 
     return(
         <div className="SellListScreen flex flex-col items-center  bg-slate-100 mb-4">
+             <Header />
         <div className="wrapper mt-4 ">
          <div className="flex gap-3">
                <p className="text-xs">Nhà tốt </p>
@@ -337,9 +340,12 @@ const RentListScreen = () => {
         <PaginationCustom currentPage={currentPage} setCurrentPage={setCurrentPage} totalPages={totalPages}/>
 
         <div className="mt-5"></div>
-     
+        <Footer />
+
     </div>
+    
     )
 
 }
+
 export default RentListScreen

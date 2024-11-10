@@ -3,11 +3,14 @@ import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import './index.css'
 import PostList from '../../components/postList';
 import { RealEstate } from '../../data/realestate';
-
+import Header from '../../components/header';
+import Footer from '../../components/footer';
 
 const ProfileScreen=()=>{
     const list = RealEstate.slice(0, 3);
     return (
+        <div>
+          <Header />
         <div className="ProfileScreen-wrapper bg-slate-100">
             <div className="py-12 flex justify-center">
                 <div className="wrapper flex px-36 mt-7 gap-5">
@@ -69,6 +72,9 @@ const ProfileScreen=()=>{
                 </div>
             </div>
         </div>
+        <Footer />
+        </div>
+
     );
 };
 
