@@ -1,0 +1,44 @@
+.MainHeaderContent-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+.logo-section img {
+    height: 40px;
+}
+
+.headerFunction-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-options-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.shadow-gg {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex-gap-5 {
+    display: flex;
+    gap: 5px;
+}
+
+.register-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

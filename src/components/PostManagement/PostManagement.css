@@ -1,0 +1,84 @@
+/* PostManagement.css */
+
+.post-management {
+  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-right: 20px;
+    margin: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .tab:hover {
+    color: #ffa500;
+  }
+  
+  .tab.active {
+    color: #ffa500;
+    font-weight: bold;
+    border-bottom: 2px solid #ffa500;
+  }
+  
+  .content {
+    padding: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .post-button {
+    display: block;
+    left:50%;
+    top: 60%;
+    width: 15%;
+    padding: 12px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .post-button:hover {
+    background-color: #ff8c00;
+  }
+  

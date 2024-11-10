@@ -2,13 +2,17 @@ import React from 'react';
 import { Box, Container, Typography, Button, Grid } from '@mui/material';
 import { FaDollarSign, FaGift, FaHistory, FaHeadphones, FaFileContract } from 'react-icons/fa';
 import './profilebroker.css'; // Custom CSS for minor adjustments
-
+import HeaderBroker from '../../components/header copy';
+import Footer from '../../components/footer';
 const ProfileBroker = () => {
   return (
+    <div>
+<HeaderBroker/>
     <Container maxWidth="100%" className="profile-page">
       {/* Greeting Section */}
       <Box className="greeting-section bg-black text-white py-4 px-3">
         <Typography variant="h4">Xin chào, User</Typography>
+
       </Box>
 
       {/* Category Section */}
@@ -56,6 +60,9 @@ const ProfileBroker = () => {
         <Button variant="text" color="primary">Xem tất cả</Button>
       </Box>
     </Container>
+    <Footer/>
+
+    </div>
   );
 };
 

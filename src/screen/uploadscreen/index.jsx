@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import TextBaseSemi from "../../components/text/semibold/text-base";
 import TextSmNor from "../../components/text/normal/text-sm";
 import "./index.css";
-
+import HeaderBroker from '../../components/header copy';
+import Footer from '../../components/footer';
 const UpLoadScreen = () => {
   const [uploadImg, setUpLoadImg] = useState("");
   const [rentOrBuy, setRentOrBuy] = useState("Buy");
@@ -27,12 +28,15 @@ const UpLoadScreen = () => {
   };
 
   return (
+    <div>
+      <HeaderBroker/>
     <div className="UpLoadScreen-wrapper relative">
       <div className="bg-slate-100 flex justify-center h-full py-12">
         <div className="w-full md:w-8/12 bg-white py-7 px-3 rounded-lg flex flex-col md:flex-row">
+          {/* Left section: Image Upload */}
           <div className="w-full md:w-4/12 px-2">
             <TextBaseSemi text={"Hình ảnh Video Sản phẩm"} />
-            <div className="flex gap-1">
+            <div className="flex gap-1 mt-2">
               <TextSmNor text={"Xem thêm về"} />
               <a href="#" className="text-blue-700 underline">
                 <TextSmNor text={"Quy định đăng tin của Chợ Tốt"} />
@@ -68,10 +72,11 @@ const UpLoadScreen = () => {
             </div>
           </div>
 
+          {/* Right section: Form for Sell or Rent */}
           <div className="w-full md:w-8/12 px-2 mt-4 md:mt-0">
             <div className="flex justify-between">
               <h1
-                className={`text-center w-1/2 cursor-pointer ${rentOrBuy === "Buy" ? "text-orange-400 " : ""}`}
+                className={`text-center w-1/2 cursor-pointer ${rentOrBuy === "Buy" ? "text-orange-400" : ""}`}
                 onClick={() => setRentOrBuy("Buy")}
               >
                 Đăng tin về bán
@@ -85,6 +90,7 @@ const UpLoadScreen = () => {
             </div>
 
             <form className={rentOrBuy === "Buy" ? "uploadSell" : "uploadRent"} onSubmit={handleSubmit}>
+              {/* Title Field */}
               <div className="form-group mb-4">
                 <label className="block text-gray-700">Tiêu đề</label>
                 <input
@@ -95,6 +101,8 @@ const UpLoadScreen = () => {
                   required
                 />
               </div>
+
+              {/* City Field */}
               <div className="form-group mb-4">
                 <label className="block text-gray-700">Thành phố</label>
                 <input
@@ -105,6 +113,8 @@ const UpLoadScreen = () => {
                   required
                 />
               </div>
+
+              {/* Detailed Address Field */}
               <div className="form-group mb-4">
                 <label className="block text-gray-700">Mô tả chi tiết địa chỉ</label>
                 <input
@@ -115,6 +125,8 @@ const UpLoadScreen = () => {
                   required
                 />
               </div>
+
+              {/* Area Field */}
               <div className="form-group mb-4">
                 <label className="block text-gray-700">Diện tích (m²)</label>
                 <input
@@ -125,6 +137,8 @@ const UpLoadScreen = () => {
                   required
                 />
               </div>
+
+              {/* Property Type Field */}
               <div className="form-group mb-4">
                 <label className="block text-gray-700">Loại bất động sản</label>
                 <select
@@ -136,9 +150,10 @@ const UpLoadScreen = () => {
                   <option value="house">Nhà</option>
                   <option value="apartment">Căn hộ</option>
                   <option value="land">Đất thổ cư</option>
-                  
                 </select>
               </div>
+
+              {/* Certificate Field */}
               <div className="form-group mb-4">
                 <label className="block text-gray-700">Sổ đỏ</label>
                 <div className="flex gap-4 mt-2">
@@ -165,8 +180,10 @@ const UpLoadScreen = () => {
                 </div>
               </div>
 
+              {/* Pricing and Buttons */}
               {rentOrBuy === "Buy" ? (
                 <>
+                  {/* Price Field for Buying */}
                   <div className="form-group mb-4">
                     <label className="block text-gray-700">Giá bán</label>
                     <input
@@ -177,12 +194,13 @@ const UpLoadScreen = () => {
                       required
                     />
                   </div>
-                  <button type="submit" className="btn-primary mt-4">
+                  <button type="submit" className="flex items-center gap-2 bg-orange-500 p-2 rounded-lg"  style={{ color: "white" }}>
                     Đăng tin bán
                   </button>
                 </>
               ) : (
                 <>
+                  {/* Price Field for Renting */}
                   <div className="form-group mb-4">
                     <label className="block text-gray-700">Giá thuê</label>
                     <input
@@ -193,6 +211,8 @@ const UpLoadScreen = () => {
                       required
                     />
                   </div>
+
+                  {/* Rental Period Field */}
                   <div className="form-group mb-4">
                     <label className="block text-gray-700">Thời hạn thuê</label>
                     <select
@@ -205,7 +225,7 @@ const UpLoadScreen = () => {
                       <option value="yearly">Hàng năm</option>
                     </select>
                   </div>
-                  <button type="submit" className="btn-primary mt-4">
+                  <button type="submit" className="flex items-center gap-2 bg-orange-500 p-2 rounded-lg"  style={{ color: "white" }}>
                     Đăng tin thuê
                   </button>
                 </>
@@ -214,7 +234,11 @@ const UpLoadScreen = () => {
           </div>
         </div>
       </div>
+
     </div>
+<Footer/>
+    </div>
+
   );
 };
 

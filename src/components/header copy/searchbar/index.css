@@ -1,0 +1,13 @@
+.searchBar-wrapper{
+
+}
+.search-button{
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.type{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

@@ -5,7 +5,7 @@ import PostList from '../../components/postList';
 import { RealEstate } from '../../data/realestate';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-
+import { Link } from 'react-router-dom';
 const ProfileScreen=()=>{
     const list = RealEstate.slice(0, 3);
     return (
@@ -13,7 +13,6 @@ const ProfileScreen=()=>{
           <Header />
         <div className="ProfileScreen-wrapper bg-slate-100">
             <div className="py-12 flex justify-center">
-                <div className="wrapper flex px-36 mt-7 gap-5">
                     {/* Profile Info Section */}
                     <div className="w-2/5 rounded-md overflow-hidden h-fit shadow-sm bg-white pb-10">
                         <div className="relative w-full bg-slate-200">
@@ -52,24 +51,17 @@ const ProfileScreen=()=>{
                             <button className="text-center py-3 rounded-md bg-orange-400 w-full text-white font-semibold text-xl mb-3 mt-6">
                                 Chia sẻ trang cá nhân
                             </button>
-                            <button className="text-center py-3 rounded-md border-2 w-full text-gray-700 font-semibold text-xl">
-                                Chỉnh sửa trang cá nhân
-                            </button>
+                          
+                            <Link to="/UpdateInfor">
+                                <button className="text-center py-3 rounded-md border-2 w-full text-gray-700 font-semibold text-xl">
+                                    Chỉnh sửa trang cá nhân
+                                </button>
+                            </Link>
                         </div>
                     </div>
 
                     {/* Post List Section */}
-                    <div className="w-3/5 px-5 py-3 rounded-md post-list bg-white shadow-sm">
-                        <div className="w-full">
-                            <div className="border-b-2 pb-4 border-orange-400">
-                                <h1 className="text-center text-orange-500 font-semibold text-2xl">
-                                    Danh sách đang hiển thị
-                                </h1>
-                            </div>
-                            <PostList list={list} />
-                        </div>
-                    </div>
-                </div>
+                    
             </div>
         </div>
         <Footer />

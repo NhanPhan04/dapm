@@ -13,6 +13,8 @@ import ProfileBroker from './components/profilebroker/profilebroker';
 import LoginBroker from './components/loginbroker/loginbroker';
 import RegisterBroker  from './components/registerbroker/registerbroker';
 import ChangePassword from './screen/updateprofile/ChangePassword';
+import UpdateInfor from './screen/updateprofile/UpdateInfor';
+import PostManagement from './components/PostManagement/PostManagement';
 
 const App = () => {
     return(
@@ -32,7 +34,8 @@ const App = () => {
                 <Route path='/profilebroker' element={<ProfileBroker/>}/>
                 <Route path='/loginbroker' element={<LoginBroker/>}/>
                 <Route path='/registerbroker' element={<RegisterBroker/>}/>
-    
+                <Route path='/UpdateInfor' element={<UpdateInfor/>}/>
+                <Route path='/PostManagement' element={<PostManagement/>}/>
             </Routes>
         </div>
     )
