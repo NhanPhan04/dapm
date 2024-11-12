@@ -1,0 +1,42 @@
+
+.post-management-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+.header-post-management {
+    background-color: #ffd5d5;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.header-post-management h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tabs-post-management {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.tabs-post-management span {
+    cursor: pointer;
+    color: #333;
+}
+
+.content-post-management {
+    background-color: white;
+    height: 300px; 
+    border-radius: 8px;
+    padding: 20px;
+}

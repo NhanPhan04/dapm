@@ -42,8 +42,14 @@ const PostManagement = () => {
 
       <div className="content">
         {activeTab === "displaying" && <p>Hiện tại không có tin đăng nào.</p>}
-        {/* Add content for other tabs as needed */}
+        {activeTab === "expired" && <p>Hiện tại không có tin đăng nào.</p>}
+        {activeTab === "rejected" && <p>Hiện tại không có tin đăng nào.</p>}
+        {activeTab === "payment" && <p>Hiện tại không có tin đăng nào.</p>}
+        {activeTab === "draft" && <p>Hiện tại không có tin đăng nào.</p>}
+        {activeTab === "pending" && <p>Hiện tại không có tin đăng nào.</p>}
+        {activeTab === "answered" && <p>Hiện tại không có tin đăng nào.</p>}
       </div>
+     
         <Link to="/uploadscreen">
             <button className="post-button">Đăng tin</button>
         </Link>

@@ -1,0 +1,14 @@
+p{
+    cursor: pointer;
+}
+
+p:hover{
+    opacity: 0.7;
+}
+
+.grey-bg{
+    background-color: #e8e8e8;
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 0px 0px 0px 5px;
+}

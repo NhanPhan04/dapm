@@ -16,6 +16,10 @@ import ChangePassword from './screen/updateprofile/ChangePassword';
 import UpdateInfor from './screen/updateprofile/UpdateInfor';
 import PostManagement from './components/PostManagement/PostManagement';
 
+
+import ManagementPage from './Admin/ManagementPage/ManagementPage';
+import PostManagementAdmin  from './Admin/PostManagementAdmin/PostManagementAdmin';
+
 const App = () => {
     return(
         <div>
@@ -36,6 +40,9 @@ const App = () => {
                 <Route path='/registerbroker' element={<RegisterBroker/>}/>
                 <Route path='/UpdateInfor' element={<UpdateInfor/>}/>
                 <Route path='/PostManagement' element={<PostManagement/>}/>
+
+                <Route path='/ManagementPage' element={<ManagementPage/>}/>
+                <Route path='/PostManagementAdmin' element={<PostManagementAdmin/>}/>
             </Routes>
         </div>
     )
