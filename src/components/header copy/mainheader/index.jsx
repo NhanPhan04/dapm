@@ -25,10 +25,6 @@ const MainHeaderContent = () => {
 
             {/* User Options Section */}
             <div className="user-options-section">
-                <Link to="/register" className="register-button">
-                    <PersonIcon className="text-white" />
-                        <div>DÀNH CHO NGƯỜI TÌM NHÀ</div>
-                </Link>
                 <Link to="/uploadscreen" className="register-button">
                     <PersonIcon  className="text-white" />
                     Đăng Tin

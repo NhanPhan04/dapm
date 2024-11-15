@@ -2,7 +2,7 @@ export const RealEstate = [
     {
         id: 1,
         title: "Nhà Bungalow Xinh Xắn tại P.15, BÌNH THẠNH, Gần Chợ Địa Phương",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/bungalow.png`,
         description: 'Nhà bungalow ấm cúng với tiện nghi hiện đại, lý tưởng cho gia đình.',
         location: '123 Đường Bình Lợi, P.15',
         price: 850000000,
@@ -21,7 +21,7 @@ export const RealEstate = [
     {
         id: 2,
         title: "Căn Hộ 3 Phòng Ngủ Sang Trọng tại P.12, QUẬN 10, Trung Tâm Thành Phố",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/canho3phongngu.png`,
         description: 'Căn hộ rộng rãi với các chi tiết hoàn thiện cao cấp và tầm nhìn tuyệt đẹp.',
         location: '45 Đường Thành Thái, P.12',
         price: 3000000000,
@@ -40,7 +40,7 @@ export const RealEstate = [
     {
         id: 3,
         title: "Nhà Phố 4 Tầng Thời Thượng tại P. Tân Phú, Gần Trường Học",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/nhapho4tang.png`,
         description: 'Nhà phố mới xây với thiết kế sang trọng và không gian mở.',
         location: '56 Đường Lê Duẩn, P. Hòa Cường Bắc',
         price: 4000000000,
@@ -59,7 +59,7 @@ export const RealEstate = [
     {
         id: 4,
         title: "Biệt Thự Vườn Rộng Tại P. Bình Trưng Đông, QUẬN 2",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/bietthuvuonrong.png`,
         description: 'Biệt thự cao cấp với vườn lớn và hồ bơi riêng, lý tưởng cho sự thư giãn.',
         location: '78 Đường Lạc Long Quân, P. Nhật Tân',
         price: 15000000000,
@@ -78,7 +78,7 @@ export const RealEstate = [
     {
         id: 5,
         title: "Căn Hộ Studio Hiện Đại Tại P. An Khánh, QUẬN 2",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/5.png`,
         description: 'Căn hộ nhỏ gọn và phong cách, tuyệt vời cho người độc thân hoặc cặp đôi.',
         location: '90 Đường 3 Tháng 2, P. Xuân Khánh',
         price: 1200000000,
@@ -97,7 +97,7 @@ export const RealEstate = [
     {
         id: 6,
         title: "Lô Đất Thích Hợp Xây Nhà Vườn tại Bình Chánh",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/6.png`,
         description: 'Lô đất rộng với tiềm năng phát triển, thích hợp cho xây dựng nhà vườn hoặc đầu tư.',
         location: '789 Đường Nguyễn Văn Linh, P. Bình Hưng',
         price: 2000000000,
@@ -116,7 +116,7 @@ export const RealEstate = [
     {
         id: 7,
         title: "Căn Hộ 2 Phòng Ngủ tại P.12, QUẬN 1, Gần Trung Tâm Thương Mại",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/7.png`,
         description: 'Căn hộ hiện đại với thiết kế mở, gần các tiện ích và dịch vụ.',
         location: '123 Đường Lê Lợi, P.12',
         price: 2500000000,
@@ -154,7 +154,7 @@ export const RealEstate = [
     {
         id: 9,
         title: "Đất Nền Dự Án Tại Huyện Bình Chánh",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/7.png`,
         description: 'Đất nền dự án với vị trí đắc địa, thích hợp đầu tư hoặc xây dựng nhà ở.',
         location: '789 Đường Quốc Lộ 1A, Huyện Bình Chánh',
         price: 1500000000,
@@ -208,10 +208,10 @@ export const RealEstate = [
         updatedAt: new Date('2024-10-27T13:00:00Z'),
         RentorSell: "Sell"
     },
-    {
+   {
         id: 12,
         title: "Căn Hộ Studio Hiện Đại tại P.2, QUẬN 3, Gần Công Viên Tao Đàn",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/canhostudio.png`,
         description: 'Căn hộ studio phong cách, phù hợp cho người độc thân hoặc cặp đôi.',
         location: '45 Đường Trương Định, P.2',
         price: 10000000,
@@ -231,7 +231,7 @@ export const RealEstate = [
     {
         id: 13,
         title: "Nhà Nguyên Căn 3 Tầng tại P.4, QUẬN TÂN BÌNH, Gần Sân Bay Tân Sơn Nhất",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/nha3tang.png`,
         description: 'Nhà 3 tầng rộng rãi, tiện nghi, phù hợp cho gia đình lớn.',
         location: '123 Đường Phạm Văn Bạch, P.4',
         price: 20000000,
@@ -251,7 +251,7 @@ export const RealEstate = [
     {
         id: 14,
         title: "Phòng Trọ Giá Rẻ tại P. An Phú, QUẬN 2",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/phongtrogiarer.png`,
         description: 'Phòng trọ tiện nghi, giá cả phải chăng cho sinh viên hoặc người đi làm.',
         location: '56 Đường Nguyễn Hoàng, P. An Phú',
         price: 3000000,
@@ -271,9 +271,9 @@ export const RealEstate = [
     {
         id: 15,
         title: "Lô Đất Cho Thuê tại Bình Chánh, Thích Hợp Làm Nhà Vườn",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
+        imgsrc: `${process.env.PUBLIC_URL}/img/lodat.png`,
         description: 'Lô đất rộng, vị trí thuận lợi cho phát triển nhà vườn hoặc nông trại nhỏ.',
-        location: '123 Đường Nguyễn Văn Linh, Bình Chánh',
+        location: '123 Đường Nguyễn Văn Linh',
         price: 15000000,
         city: "Tp Hồ Chí Minh",
         category: "Đất",
@@ -286,26 +286,6 @@ export const RealEstate = [
         furnished: false,
         renterType: "Cá nhân",
         updatedAt: new Date('2024-10-28T14:00:00Z'),
-        RentorSell: "rent"
-    },
-    {
-        id: 16,
-        title: "Mặt Bằng Kinh Doanh tại P. Bến Thành, QUẬN 1, Gần Chợ Bến Thành",
-        imgsrc: `${process.env.PUBLIC_URL}/img/placeholder.png`,
-        description: 'Mặt bằng rộng rãi, thích hợp cho các cửa hàng thời trang hoặc nhà hàng.',
-        location: '456 Đường Lê Thánh Tôn, P. Bến Thành',
-        price: 50000000,
-        city: "Tp Hồ Chí Minh",
-        category: "Mặt bằng",
-        houseType: "Mặt tiền",
-        area: "120m2",
-        bedrooms: 0,
-        bathrooms: 2,
-        direction: "Đông Nam",
-        rentalPeriod: "Hàng tháng",
-        furnished: false,
-        renterType: "Đối tác",
-        updatedAt: new Date('2024-10-28T15:00:00Z'),
         RentorSell: "rent"
     }
 ];

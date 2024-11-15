@@ -1,12 +1,11 @@
-// OtherFuncBar.jsx
 import React, { useState } from "react";
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ChatIcon from '@mui/icons-material/Chat';
+import PersonIcon from '@mui/icons-material/Person'; // Import PersonIcon for profile
 import './index.css';
 import { Link } from "react-router-dom";
 import ChatBox from '../../ChatBox/ChatBox';
-
 
 const OtherFuncBar = () => {
     const [isChatOpen, setIsChatOpen] = useState(false);
@@ -24,7 +23,11 @@ const OtherFuncBar = () => {
         {
             title: "Chat",
             icon: ChatIcon,
-            
+        },
+        {
+            title: "Profile", // New item for profile
+            icon: PersonIcon,
+            link: "/profileScreen" // Link to the profile page
         }
     ];
 
